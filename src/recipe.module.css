@@ -1,0 +1,32 @@
+.recipe {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10%;
+    box-shadow: -5px -5px 10px grey;
+    width: 300px;
+    margin: 20px 10px;
+    padding: 0px 10px 50px 10px;
+
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.recipe h2, h3{
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+    background-color: blue;
+}
+
+.recipe img{
+    border-radius: 10%;
+    border: 2px;
+    height: 200px;
+    width: 200px;
+    align-self: center;
+}
+
+.ingredients ul {
+    font-family: Arial;
+    font-size: 16px;
+}

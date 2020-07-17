@@ -43,18 +43,20 @@ function App() {
         <input type="text" className='search-bar' onChange={searchChanged}></input>
         <button className='search-btn' onClick={searchBtnClicked}>Search</button>
       </form>
-      {
-        recipes.map(recipe => {
-          return (<Recipe
-              key={recipe.recipe.label}
-              title = {recipe.recipe.label}
-              calories = {Math.floor(recipe.recipe.calories)}
-              imageSrc = {recipe.recipe.image}
-              ingredients = {recipe.recipe.ingredients}
-              recipeObj={recipe}
-            />)
-        })
-      }
+      <div className='recipesContainer'>
+        {
+          recipes.map(recipe => {
+            return (<Recipe
+                key={recipe.recipe.label}
+                title = {recipe.recipe.label}
+                calories = {Math.floor(recipe.recipe.calories)}
+                imageSrc = {recipe.recipe.image}
+                ingredients = {recipe.recipe.ingredients}
+                recipeObj={recipe}
+              />)
+          })
+        }
+      </div>
     </div>
   );
 }
