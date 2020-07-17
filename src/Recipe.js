@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './recipe.module.css';
+import style from './Recipe.module.css';
 
 function Recipe({key, title, calories, imageSrc, ingredients}) {
     return (
